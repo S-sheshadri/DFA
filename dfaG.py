@@ -1,5 +1,15 @@
 import sys
 file1=sys.argv[1]
+res=[]
+with open(file1, 'rw') as f:
+	lines=f.readlines()
+for line in lines:
+	if not line[0:2]=="//":
+		res.append(line)
+f.seek(0, 0)
+line = fo.writelines(res)
+f.close()
+																																																																		
 with open(file1, 'r') as f:
     head = [next(f) for x in xrange(2)]
 

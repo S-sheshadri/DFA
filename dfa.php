@@ -2,29 +2,28 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+  <link rel="stylesheet" type="text/css" href="dfa.css">
+
+    </script>
   </head>
   <body>
-<div class="Head">
-  DFA SIMULATOR
-
-</div>
+	<div class="Head">
+	  DFA SIMULATOR
+	</div>
 <form class="" action="<?php $_SESSION['dfa']=1; header('dfa.php');?>" method="post">
 
-  <div class="Body">
-    <textarea name="pgm" id="pgm" rows="8" cols="80">//Write code here</textarea>
-  </div>
+	  <div class="Body">
+	    <textarea name="pgm" id="pgm" rows="20" cols="80">//Write code here</textarea>
+	  </div>
 
-  <div class="buttons">
-    <input type="submit" name="" value="Submit"/>
-
-  </div>
+	  <div class="buttons">
+	    <button id="analyze" class="buttons" type="submit">Analyze</button>
+	  </div>
 </form>
   </body>
 </html>
-
 <?php
-    error_reporting(E_ALL & ~E_NOTICE);
+    error_reporting(~E_NOTICE);
     require_once 'Image/GraphViz.php';
     if($_SESSION['dfa']==1)
 	  {
@@ -39,3 +38,5 @@
 	}
   $_SESSION['dfa']=0;
 ?>
+
+

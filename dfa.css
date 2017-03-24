@@ -15,7 +15,10 @@ border-radius:15px;
 border-color:#061502;
 }
 
-
+img
+{
+display:block;
+margin:auto;}
 body
 {
 font-family: 'Acme';
