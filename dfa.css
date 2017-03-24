@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css?family=Acme');
+
+.Head
+{
+font-size:50px;
+font-weight:bold;
+text-align:center;}
+
+#pgm
+{
+display: block;
+margin:20px auto;
+border-radius:15px;
+border-color:#061502;
+}
+
+
+body
+{
+font-family: 'Acme';
+font-size: 22px;
+color:#fff;
+background-image: url("green.jpg");
+background-repeat: no-repeat;
+background-position: right top;
+
+}
+.buttons
+{
+text-align: center;
+ margin: 15px auto;
+}
+
+#analyze
+{
+    position: relative;
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-family: 'Acme', sans-serif;
+    font-size: 20px;
+    color: #FFF;
+    text-decoration: none;  
+    cursor: pointer; 
+    cursor: hand;
+    background-color: #061502;
+   }
+
