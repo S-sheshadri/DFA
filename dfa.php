@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="dfa.css">
-
-    </script>
+<script type="text/javascript">
+function show () 
+{
+document.getElementById('dfa').style.visibility="visible";}
+</script>
   </head>
   <body>
 	<div class="Head">
@@ -17,7 +20,7 @@
 	  </div>
 
 	  <div class="buttons">
-	    <button id="analyze" class="buttons" type="submit">Analyze</button>
+	    <button id="analyze" class="buttons" type="submit" onclick="show()">Analyze</button>
 	  </div>
 </form>
   </body>
@@ -34,7 +37,7 @@
 	    $output = shell_exec($command);
 	    file_put_contents("output.dot",$output);
 	    $graph->renderDotFile("output.dot", "outputImage.png","png");
-	    echo "<img src='outputImage.png' />";
+	    echo "<div id='dfa'><img src='outputImage.png' /></div>";
 	}
   $_SESSION['dfa']=0;
 ?>
